@@ -6,6 +6,7 @@ def transformation(lst):
             lst[lst.index(i)] = int(i/2)
     return lst
 
+
 print(transformation([852, 85, 784, 58]))
 
 
