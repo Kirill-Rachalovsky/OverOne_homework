@@ -6,18 +6,19 @@ class Dog:
         self.age = age
 
     def jump(self):
-        print(f'{self.breed} {self.name} is jumping!')
+        return f'{self.breed} {self.name} is jumping!'
 
     def run(self):
-        print(f'{self.breed} {self.name} is running!')
+        return f'{self.breed} {self.name} is running!'
 
     def bark(self):
-        print(f'{self.breed} {self.name} is barking!')
+        return f'{self.breed} {self.name} is barking!'
 
 
-Watson = Dog('Corgi', 15, 'Watson', 2)
+if __name__ == '__main__':
+    Watson = Dog('Corgi', 15, 'Watson', 2)
 
-print(Watson.__dict__)
-Watson.jump()
-Watson.run()
-Watson.bark()
+    print(Watson.__dict__)
+    print(Watson.jump())
+    print(Watson.run())
+    print(Watson.bark())
